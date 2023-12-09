@@ -1,0 +1,96 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+  margin-bottom: -75px;
+}
+
+.rock {
+  height: 20vmin;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  border: 40px solid hsl(349, 71%, 52%);
+  margin: 10px;
+}
+.paper {
+  height: 20vmin;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  border: 40px solid hsl(230, 89%, 62%);
+  margin: 10px;
+}
+.scissor{
+  height: 20vmin;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  border: 40px solid hsl(39, 89%, 49%);
+  margin: 10px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .rock, .paper, .scissor {
+    animation: App-logo-spin infinite 30s linear;
+  }
+}
+.btn {
+  background-color: #282c34;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: -150px;
+  margin: 5px;
+  padding: 1px;
+}
+.rps {
+  background-color: #282c34;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box {
+  height: 110px;
+  width: 300px;
+  border: 2px solid white;
+  margin-top: 25px;
+  margin-left: 580px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5px;
+  padding: -10py;
+}
+.score {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 100px;
+  height: 90px;
+  width: 90px;
+  border: 1px solid blue;
+  background: white;
+  color: hsl(217, 16%, 45%);
+}
